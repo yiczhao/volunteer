@@ -1,0 +1,28 @@
+/**
+ * @author: yiczhao.
+ */
+
+@import "variables";
+@import "library/index";
+@import "views/boot";
+@import "components/index";
+
+html, body {
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
+}
+
+.router-wrap {
+  font-size: 13px;
+
+  .markdown-ul {
+    padding: 0 0 10px 30px;
+    list-style-type: circle;
+
+    li {
+      padding: 3px;
+    }
+  }
+}

@@ -1,0 +1,197 @@
+@import "../../foundation/SassMagic-master/src/sassMagic";
+@import "../../styles/variables";
+@import '../../styles/components/input.scss';
+.AddTableItem{
+    .btn-group{
+        background: #E9F5FF;
+        padding:20px;
+        ul {
+        overflow:hidden;
+        display: inline-block;
+            li{
+                background: #E9E9E9;
+                border-radius: 23px;
+                height: 24px;
+                line-height:24px;
+                margin-right:10px;
+                text-align: center;
+                float: left;
+                cursor: pointer;
+                margin-top:10px;
+                span{
+                    color: #999999;
+                    padding:3px 11px;
+                }
+                &.check{
+                    background: #2196F3;
+                    span{
+                        color: #fff;
+                        padding:3px 11px;
+                    }
+                }
+            }
+        }
+        .btn-add{
+            display: inline-block;
+            background: #4CAF50;
+            border-radius: 50%;
+            width:24px;
+            height: 24px;
+            position:relative;
+            cursor: pointer;
+            &:before{
+                position: absolute;
+                top:11px;
+                left:5px;
+                background:#fff;
+                content:'';
+                width:14px;
+                height: 2px;
+            }
+            &:after{
+                position: absolute;
+                left:11px;
+                top:5px;
+                background:#fff;
+                content:'';
+                height: 14px;
+                width: 2px;
+            }
+        }
+    }
+    .top{
+        padding:20px;
+        background: #E8F5FF;
+        .btn-input{
+            margin-bottom: 20px;
+            .errormsg{
+                color:red;
+                margin:10px 0;
+            }
+            input{
+                border:none;
+                background: #D3DFE8;
+                border: 1px solid #D3DFE8;
+                color: #444444;
+                &.disabled{
+                    background: #FFFFFF;
+                    border: 1px solid #C8C8C8;
+                    border-radius: 2px;
+                    border-radius: 2px;
+                    font-size: 13px;
+                }
+                &:focus{
+                    background: #FFFFFF;
+                    border: 1px solid #C8C8C8;
+                    border-radius: 2px;
+                    border-radius: 2px;
+                    font-size: 13px;
+                }
+            }
+            span{
+                margin-left:10px;
+                cursor: pointer;
+                color: #C8C8C8;
+            }
+        }
+        .table-default{
+            margin-bottom: 6px;
+            ul {
+                overflow:hidden;
+                li{
+                    border: 1px solid #DAE4ED;
+                    border-radius: 2px;
+                    margin-right:10px;
+                    margin-bottom:20px;
+                    float:left;
+                    cursor: pointer;
+                    span{
+                        font-size: 14px;
+                        padding:5px 10px;
+                        color: #444444;
+                        display: block;
+                    }
+                    &.alreadychoose{
+                        background: #FFFFFF;
+                        border-radius: 2px;
+                    }
+                }
+            }
+        }
+    }
+    .middle{
+        padding:20px;
+        .mb-20{margin-bottom:20px}
+        .title{
+            font-size: 13px;
+            color: #999999;
+            width:53px;
+            height: 30px;
+            line-height: 30px;
+            text-align: right;
+            padding-right: 10px;
+        }
+        ul {
+            display: inline-block;
+            li{
+                background: #999999;
+                border-radius: 2px;
+                float:left;
+                margin-right:10px;
+                span{
+                    padding:5px 10px;
+                    color:#fff;
+                    display: block;
+                    cursor: pointer;
+                    font-size: 14px;
+                }
+                &.disabled{
+                    background:#000;
+                    opacity:0.2;
+                    span{
+                        cursor: not-allowed;
+                    }
+
+                }
+            }
+        }
+    }
+    .bottom{
+        position:relative;
+        margin:20px;
+        .tip{
+            height: 18px;
+            font-size: 13px;
+            color: #C8C8C8;
+            position:absolute;
+            bottom:0;
+            left:0;
+        }
+        .txtr{text-align:right}
+        .btngroup{
+            .mr-10{margin-right:10px}
+            .mt-20{margin-top:20px;}
+            .checkall{
+                margin-right: 20px;
+                font-size: 13px;
+                color: #2196F3;
+                line-height: 13px;
+                cursor: pointer;
+            }
+            .reset{
+                margin-right: 20px;
+                font-family: PingFangSC-Regular;
+                font-size: 13px;
+                color: #2196F3;
+                line-height: 13px;
+                cursor: pointer;
+            }
+
+        }
+    }
+
+    
+   .AddTableItem-input{
+      @extend %input;
+    }
+}
