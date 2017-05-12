@@ -1,0 +1,69 @@
+.clearfix:before,.clearfix:after{
+	display:table;
+	content:"";
+}
+.clearfix:after{clear:both;}
+.clearfix{
+	*zoom:1;/*IE/7/6*/
+}
+.activity-rule{
+	padding-top: 20px;
+	.dashed{
+		margin: 25px;width: 90%;border-bottom: 1px dotted #c8c8c8;
+	}
+	.rule-row{
+		padding: 0 20px;margin: 0 auto 20px;
+		@extend .clearfix;
+		font-size: 15px;
+		h3{
+			width: 100%;
+			i{
+				color: red;
+			}
+		}
+
+		.rule-input{
+			@extend .clearfix;
+			padding-left: 30px;min-width: 500px;
+			& > div,& > span,& > input,& > select,& > a{
+				float: left;
+				margin-right: 10px;margin-top: 15px;
+			}
+			& > .select{
+				width: 250px;
+			}
+			.db{
+				display: block;
+				margin-top: 0px;width: 100%;
+				.select{
+					width:195px;
+				}
+				& > div,& > span,& > input,& > select,& > a{
+					float: left;
+					margin-right: 10px;margin-top: 15px;
+				}
+			}
+			.db:first-child{
+				margin-top: 0;
+			}
+			.icon-add,.icon-remove{
+				margin: 19px 0 4px 5px;float: left;
+				font-size: 24px;color: #ea6953;cursor: pointer;
+			}
+			.icon-remove{
+				color:#666;
+			}
+			.m20{
+				margin: 0 10px;position: relative;top: -15px;
+			}
+			.KSNRCheckbox{
+				margin-right:10px;top: -3px;
+			}
+		}
+		.rule-label,.rule-input{
+			line-height:36px;
+		}
+	}
+}
+
+

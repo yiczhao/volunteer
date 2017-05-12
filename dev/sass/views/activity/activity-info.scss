@@ -1,0 +1,133 @@
+.activity-info {
+  min-height: 680px;
+  padding-left: 30px!important;
+  .activity-name {
+    height: 60px;line-height: 50px;border-bottom: 1px dashed #dbdbdb;
+    font-size: 14px;font-weight: bold;
+  }
+  .activity-head {
+    width: 100%;
+    position: relative;
+  }
+  .activity-createtime {
+    float: right;right: 30px;top: 15px;
+    position: absolute;
+    .activity-type{
+      color: #a5a5a5;
+      font-size: 13px;
+    }
+  }
+  .activity-title {
+    height: 80px;margin-top: 20px;
+    display: flex;
+    clear: both;
+    .mian-row {
+      flex: 1;
+      & > div {
+        float: left;
+      }
+      .activity-type {
+        color: #a5a5a5;
+        font-size: 13px;
+      }
+      .activity-val {
+        padding-left: 10px;
+        font-size: 13px;
+        color: #444444;
+      }
+      .bias {
+        width: 17px;
+        height: 0px;
+        border: 1px dashed #a5a5a5;
+        transform: rotate(-60deg);
+        position: absolute;
+      }
+    }
+  }
+  .info-title {
+    .tab-bor {
+      border-bottom: 1px dashed #e1e1e1;
+      margin-left: 16px;top: -20px;left: -20px;
+      position: relative;
+      font-size: 13px;
+      li {
+        cursor: pointer;text-align: center;font-size: 14px!important;
+        padding-left: 5px;width: 150px;
+        padding: 12px 0px 12px 0px!important;
+      }
+      .active{
+        border: 0;border-bottom: 3px solid  #e76b5f;
+      }
+    }
+  }
+  .info-main {
+    font-size: 13px;
+    .main-title {
+      margin: 20px;
+      span {
+        font-size: 13px;
+        margin-right: 40px;
+      }
+    }
+    .activity-type {
+      color: #a5a5a5;
+      font-size: 13px;
+      min-width: 63px;
+    }
+    .activity-val {
+      padding-left: 5px;
+      font-size: 13px;color: #444444;
+    }
+    .info-basic, .info-store, .info-rule, .info-quanyi{
+      padding-right: 20px;margin-top: -10px;
+      .table-row {
+        span {
+          display: table-cell;
+        }
+        .w85 {
+          min-width: 63px;
+        }
+        .w140 {
+          min-width: 38px;
+        }
+      }
+      .main-row {
+        border-bottom: 1px dashed #e1e1e1;padding: 20px 0;
+        display: flex;
+        clear: both;
+        span {
+          //min-width: 100px;
+          //margin-right: 20px;
+        }
+        .row-right{
+          //float: right;
+          flex: 1;
+        }
+        .rigth-two{
+          flex: 2;
+        }
+        .divFlex{
+          flex: 2;
+        }
+        .textarea-val{
+          resize: none;
+          //padding: 15px;
+          width: 506px !important;
+          min-height: 200px;
+          //border: 1px solid #c8c8c8;
+          line-height:25px;
+          box-sizing:border-box;
+          border: 0px;
+          &:focus{
+            //border: 0px;
+            outline: 0px;
+          }
+        }
+      }
+    }
+    .store-title {
+      font-size: 13px;
+      margin-bottom: 10px;
+    }
+  }
+}

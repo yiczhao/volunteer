@@ -1,0 +1,81 @@
+.bussiness-set{
+	.rule-title{
+		margin: 20px 0;
+		.search-div{
+			float: right;
+			.input{
+				margin-right: 20px;
+			}
+		}
+		.btn-info{
+			margin-left: 40px;
+			background-color:#66BB6A;
+		}
+		.btn-primary{
+			margin-left: 40px;
+			background-color:#66BB6A;
+		}
+		.btn-primary:hover{
+			background-color:#4caf50;
+		}
+		.btn-info:hover{
+			background-color:#4caf50;
+		}
+	}
+	.table-row{
+		margin-bottom:20px;max-height: 500px;
+		overflow: auto;
+		.table{
+			tr th:last-child{
+				text-align: right !important;
+				padding-right: 20px !important;
+			}
+			.txt-right{
+				text-align: right !important;
+				padding-right: 20px !important;
+			}
+			tr td{
+				border-bottom:0px !important;
+			}
+		}
+	}
+	.add-table{
+		.add-search{
+			margin-bottom: 20px;
+			span,a,input,select{
+				margin-right: 10px;
+			}
+			.btn-primary:hover{
+				background-color:#e74c39 !important;
+			}
+		}
+		.table{
+			margin-bottom: 20px;
+			.KSNRCheckbox.KSNRCheckbox__UID--all{
+				margin-left: 4px;
+			}
+			tr td{
+				border-bottom:0px !important;
+			}
+		}
+		.tc{
+			padding: 20px 0;
+			.btn-primary{
+				margin-right: 20px;
+			}
+			.btn-primary:hover{
+				background-color:#e74c39 !important;
+			}
+		}
+		.addtable-row{
+			max-height: 550px;
+			overflow: auto;
+		}
+		.KsPageGroup{
+			padding: 0px 0px !important;
+			padding-left: 20px !important;
+		}
+	}
+}
+
+

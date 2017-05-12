@@ -1,0 +1,48 @@
+.custom{
+	.custom-section{
+	    .title{
+			margin: 0px 0 20px 0;
+			font-size: 20px;
+	    }
+	    .type-text{
+	    	.title{//旧版
+				display: block;
+				height: 30px;line-height: 30px;
+				font-size: 16px;
+	    		span{
+					display: inline-block;
+					line-height: 30px;width: 20px;height: 30px;
+					text-align: center;vertical-align: middle;color: red;
+	    		}
+	    	}
+	    	textarea{
+				padding: 15px;width: 97%; height: 300px; line-height: 20px;
+				resize: none;font-size: 14px;
+	    	}
+	    }
+	    .upload-file{
+			margin: 20px 0 20px 0;height: 40px;
+	    	.file{
+				float:left;
+	    	}
+	    	.check{
+	    		float: left;
+				margin: 3px 0 0 5px;
+	    	}
+	    	.info{
+				float: left;
+				margin: 3px 0 0 20px;height: 34px;line-height: 34px;
+	    	}
+	    }
+	}
+	.up-type{
+		margin: auto;width: 88px;
+		.up-type{
+			margin: auto;width: 88px;
+	  		input{
+	  			width:88px;
+	  			background-color:#37a2f5;
+	  		}
+	  	}
+	}
+}

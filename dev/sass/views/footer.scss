@@ -1,0 +1,18 @@
+.footer{
+	padding:0 20px;
+	.footer-title{
+		margin-left: 260px;margin-top: -45px;height: 45px;line-height: 45px;
+		color: #999999;
+		div:first-child{
+			float: left;
+		}
+		div:last-child{
+			float: right;
+		}
+		div{
+			span:nth-child(2){
+				margin: 0 20px;
+			}
+		}
+	}
+}

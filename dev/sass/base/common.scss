@@ -1,0 +1,262 @@
+html,body{
+  min-width: 1280px;
+  height:100%;
+  background-color: rgb(240, 240, 240);
+  h1{
+    font-size:30px;
+  }
+  h2{
+    font-size:24px;
+  }
+  h3{
+    font-size:18px;
+  }
+  h4{
+    font-size:16px;
+  }
+  h5{
+    font-size:14px;
+  }
+  h6{
+    font-size:12px;
+  }
+  .sweet-alert{
+    width: 310px;
+    padding: 18px 30px;
+    border-radius: 5px;
+    button{
+      width: 110px; height: 36px;box-sizing: border-box;
+      color: #787878;font-size: 14px;
+    }
+    .sa-icon.sa-success {
+      .sa-placeholder{
+        border-color: #3bd330;
+      }
+      .sa-line{
+        background-color: #3bd330;
+      }
+    }
+    .sa-icon.sa-info{
+      border-color:#e66c5f;
+      &:before,&:after{
+        background-color:#e66c5f;
+      }
+    }
+  }
+}
+.tc{
+  text-align: center;
+}
+.crumbs{
+  background-color: #fff;
+  height: 36px;padding-left: 20px;line-height: 36px;
+  span{
+    padding: 3px 15px;margin-right: 15px;
+    background-color:#9a9a9a;color: #fff;  border-radius: 15px;cursor: pointer;
+  }
+  .v-link-active{
+    background-color:  #e76b5f;
+  }
+}
+.header{
+  height:50px;
+  background-color: #16191c;border-color: #37474F;border-width: 1px 0;border-bottom-color: rgba(255, 255, 255, 0.1);color: #fff;
+  .header-logo{
+    float: left;margin-top: 9px;margin-left: 20px;
+    width: 135px;height: 32px;
+    background-size: 100%;background-image:url("../img/logo横版.png");background-repeat:no-repeat;
+  }
+  .header-title{
+    float:left;margin: 13px 20px 0 20px;
+    min-width:130px;height:24px;line-height: 24px;
+    font-size: 16px;
+  }
+  .header-infor{
+    float: right;margin-right: 10px;
+    .img-area{
+      float: left;
+      width: 40px;height: 50px;
+      img{
+        margin-top: 8px;
+        width: 35px;height: 35px;
+        border-radius:30px;
+      }
+    }
+    .information-show{
+      float:left;margin:0 20px;margin-top: 15px;
+      font-size:12px;
+      span:first-child{
+      }
+      span:last-child{
+        padding-left: 15px;
+      }
+    }
+    .function-click{
+      float:left;margin-top:13px;padding-left:20px;
+      width:30px;height: 25px;
+      cursor:pointer;border-left: 1px solid #fff;background-size: 46%;background-image:url("../img/logout.png");background-repeat:no-repeat;background-position: 20px 0px;
+    }
+    .function-click:hover{
+      background-image:url("../img/logoutH.png");
+    }
+  }
+}
+.content{
+  position: relative;display: table;
+  width: 100%;min-height: 768px;
+  table-layout: fixed;
+  .content-main{
+    display: table-row;
+    .content-left{
+      position: absolute; top: 0;
+      width: 260px; height: 100%;  overflow: auto;
+      background-color: #212528;color: rgb(255, 255, 255);vertical-align: top;
+      .menu{
+        position: relative;
+        list-style: none;
+        .icon{
+          margin: -5px 10px 0 0;
+        }
+        li{
+          ul a{
+            padding-left: 60px;
+          }
+        }
+        a,span{
+          padding: 12px 20px;display: block;  box-sizing: border-box; min-height: 44px;font-weight: 500;
+          cursor: pointer;color: #fff;
+          &:hover{
+            background-color: rgba(0,0,0,.1);
+          }
+        }
+        .showbtn{
+          float: right;
+          padding-top: 8px;
+        }
+        .color999{
+          a,span{
+            color: #999;
+          }
+        }
+        .v-link-active,.link-active {
+          border-left: 3px solid #e76b5f;  color: #e76b5f;
+          &:hover{
+            background-color: rgba(0,0,0,.1);
+          }
+        }
+      }
+    }
+    .main-content{
+      margin: 20px;padding: 20px 0;
+      background: #fff;
+    }
+    .content-right{
+      margin-bottom: 65px;padding-left: 260px;
+      .has-crumbs{
+        & > div:nth-child(2){
+          margin: 20px;  padding: 20px 20px;
+          background: #fff;
+        }
+      }
+      .KsPageGroup{
+        padding-left: 20px;
+      }
+      .KsDaterMultiPicker .KsDaterMulti{
+        width: 650px;
+      }
+      .outPDF{
+        padding-left: 20px;
+      }
+      .search-div{
+        padding: 0 20px;
+        .conditions-list{
+          min-width: 846px;
+          text-align: right;
+          float: none;
+          .show-position{
+            position:relative;
+          }
+          .showList{
+            text-align:left;
+          }
+        }
+        .do-search{
+          display: table-cell;
+          width: 88px;
+          text-align: right;
+          float: none;
+          margin-right:15px;
+          span{
+            margin: 0 10px;
+          }
+        }
+        .KsDaterMultiPicker{
+          display: inline-block !important;
+        }
+      }
+      .overFlow{overflow-x:auto}
+      table{
+        width:100%;margin-bottom: 20px;
+        tr{
+          height:44px;
+          text-align:left;background-color:#FFFFFF;
+          th{
+            padding-left: 20px;
+            border-bottom:1px solid #E9E9E9;border-bottom-color:#999999;text-align:left;white-space: nowrap;
+          }
+          td{
+            padding-left: 20px;white-space: nowrap;
+            //border-bottom: 1px solid #e9e9e9;
+            a{
+              padding-right:5px;
+              color:#2196f3;cursor: pointer;
+            }
+            a:hover{
+              color:#1e88e5;
+            }
+          }
+        }
+        tr:nth-child(2n){
+          background-color:#FCFCFC;
+        }
+      }
+      .pages{
+        margin-top: 20px;
+      }
+      .page-title{
+        padding-left: 20px;  height: 46px;line-height: 46px;
+        background-color: #fff;font-size: 22px;
+      }
+      .w265{
+        box-sizing: border-box;height:50px;line-height: 50px;
+        // color:#999999;
+      }
+      .w265.active{
+        border-bottom: 3px solid #e76b5f;  color: #e76b5f;
+      }
+    }
+  }
+  .KsDatePicker .KsDater,.KsDater{
+    width: 350px;
+  }
+}
+.r {
+  float: right;
+}
+a{
+  color:#2196f3;  cursor: pointer;
+}
+a:hover{
+  color:#1e88e5;
+}
+.color999{
+  padding-right: 5px;
+  color: #999;
+}
+.footer{
+  height: 45px;
+  background-color:#fff;
+}
+.input[type="text"]:disabled,.input[type="text"]:read-only{
+  cursor: not-allowed;background: #f1f1f1;color: #999;
+}

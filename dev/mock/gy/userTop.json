@@ -1,0 +1,58 @@
+{
+  "mock-length":"[10,10]",	
+  "message": "{{['请求成功']}}",
+  "data": {
+    "userTopTen":[{
+	    "topName":"苏州",
+	    "topValue":300
+	},{
+	    "topName":"苏州1",
+	    "topValue":300
+	},{
+	    "topName":"苏州2",
+	    "topValue":300
+	},{
+	    "topName":"苏州4",
+	    "topValue":300
+	},{
+	    "topName":"苏州33",
+	    "topValue":300
+	},{
+	    "topName":"苏州11",
+	    "topValue":300
+	},{
+	    "topName":"苏州22",
+	    "topValue":300
+	},{
+	    "topName":"苏州44",
+	    "topValue":300
+	}],
+    "regitTopTen":[{
+	    "topName":"苏州",
+	    "topValue":300
+	},{
+	    "topName":"苏州1",
+	    "topValue":300
+	},{
+	    "topName":"苏州2",
+	    "topValue":300
+	},{
+	    "topName":"苏州4",
+	    "topValue":300
+	},{
+	    "topName":"苏州33",
+	    "topValue":300
+	},{
+	    "topName":"苏州11",
+	    "topValue":300
+	},{
+	    "topName":"苏州22",
+	    "topValue":300
+	},{
+	    "topName":"苏州44",
+	    "topValue":300
+	}]
+  },
+  "code":"{{[0]}}"
+}
+
