@@ -1,0 +1,119 @@
+@mixin input-radio() {
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+@mixin width-margin($width,$left) {
+  margin-left: $left;width: $width;
+}
+
+@mixin width-lineheight($width,$lineh) {
+  width: $width;line-height: $lineh;
+}
+
+.branch-bank {
+  .table {
+    margin-top: 20px;
+  }
+  .KsPageGroup {
+    margin-top: 20px;
+  }
+  .kdialog{
+    left:60%;
+    .primary:hover{
+      background-color: #e74c39 !important;
+    }
+  }
+  .form-group {
+    display: flex;display: flex;
+    margin: 0 auto 20px auto;width: 520px;
+    .name-left {
+      display: block;
+      height: 36px;
+      @include width-lineheight(100px, 36px);
+      text-align: right;
+      i {
+        margin-right: 5px;
+        color: red;
+      }
+    }
+    .KSNRCheckbox {
+      padding: 6px 3px;
+    }
+    .KSNRRadio {
+      padding: 6px 15px;
+    }
+    .name-right {
+      @include width-lineheight(150px, 36px);
+      // text-align:right;
+      margin-left: 15px;
+      input[type="checkbox"] {
+        margin-right: 5px;
+        vertical-align: middle;
+      }
+    }
+    .catch-infor {
+      margin-left: 15px;line-height: 36px;
+    }
+    .v-select {
+      @include width-margin(485px, 15px);
+      height: 36px;
+    }
+    select {
+      @include width-margin(330px, 15px);
+      border-radius: 3px;
+    }
+    .input[type="text"] {
+      @include width-margin(330px, 15px)
+    }
+    .input[type="password"] {
+      @include width-margin(330px, 15px)
+    }
+    .input[type="radio"] {
+      text-align: center;
+    }
+    .choose-radio {
+      @include width-lineheight(95px, 36px);
+      margin-left: 5px;
+      input {
+        @include input-radio;
+      }
+    }
+    .function-area {
+      @include width-margin(485px, 15px);
+      margin-left: 5px;
+      .KSNRCheckbox {
+        padding: 6px 5px;
+      }
+      .function-choose {
+        float: left;
+        margin-right: 15px;line-height: 36px;
+        input {
+          @include input-radio;
+        }
+      }
+    }
+  }
+  .form-row {
+    width: 600px;
+    .btn-primary {
+      float:right;
+      margin: 20px 20px 20px 0;
+    }
+    .btn-info{
+      margin-left: 20px;
+      background-color:#66BB6A;
+    }
+    .btn-info:hover{
+      background-color:#4caf50;
+    }
+  }
+  .close-center {
+    a {
+      margin: auto;
+    }
+  }
+  .span {
+    margin-left: 20px;line-height: 2.7;
+  }
+}

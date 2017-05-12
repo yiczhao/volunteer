@@ -1,0 +1,9 @@
+{
+  "message": "{{['请求成功']}}",
+  "data": {
+    "allUser":11111,
+    "loginUser":2222,
+    "regitUser":3333
+  },
+  "code":"{{[0]}}"
+}

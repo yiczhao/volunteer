@@ -1,0 +1,59 @@
+@mixin margin() {
+	margin-left:15px;padding-left:10px;
+}
+@mixin position-a($top,$left) {
+	position:absolute;top:$top;left:$left;
+}
+.bank-config{
+	padding:35px 60px 10px 0;
+	background-color:#fff;
+	.form-row{
+		padding: 15px 0;margin:auto;width:550px;overflow:hidden;
+		.form-label{
+			float:left;
+			line-height:42px;width: 100px;
+			font-size: 13px;text-align: right;
+			i{
+				padding-right: 13px;line-height:43px;
+				color:#FF0000;
+			}
+		}
+		.form-input{
+			float:left;
+			input{
+				@include margin;
+				width:420px;height:36px;
+				font-size:13px;
+			}
+			textarea{
+				@include margin;
+				float:left;
+				padding-top:5px;width:422px;height:100px;
+				resize:none;
+			}
+		}
+		.about-uploader{
+			position:relative;
+			margin-left:15px;width:430px;
+			.explain{
+				@include position-a(0px,115px);
+				span{
+					display: block;
+				}
+			}
+			.upload-input{
+				margin:3px 0;
+				@include position-a(66px,115px);
+			}
+			.upload-img{
+				margin-right:0;margin-top:0;width:100px;height:100px;border: 1px solid #f5f5f5;
+			}
+		}
+		.btn-primary{
+			margin-left:115px;
+		}
+	}
+	.height-div{
+		height:100px;
+	}
+}
